@@ -1,0 +1,151 @@
+.jobs-list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.job-item{
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.job-item:hover{
+    border-color: #005177;
+    background-color: ghostwhite;
+}
+.job-scroll-list{
+    width: 48%;
+    height: 750px;
+    overflow: auto;
+}
+.job_output {
+    width: 48%;
+}
+.single_job_desc {
+    max-height: 750px; 
+    overflow-y: auto; 
+    border: 1px solid #ddd; 
+    position: relative; 
+}
+.job-header {
+    background-color: #fff; /* Optional: Adds a background color to the header */
+    position: sticky; /* Makes the header sticky */
+    top: 0; /* Positions the sticky element at the top of the container */
+    z-index: 100; /* Ensures the header stays above other content */
+    padding: 10px; /* Optional: Adds padding inside the header */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow below the header */
+  }
+  
+.job-content {
+    padding: 10px; 
+}
+
+.job-line{
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.single_job_desc {
+    max-height: 750px; /* Set a fixed height for the container to make it scrollable */
+    overflow-y: auto; /* Enables vertical scrolling */
+    border: 1px solid #ddd; /* Optional: Adds a border for visual distinction */
+    position: relative; /* Required for the sticky positioning context */
+    display: none;
+}
+
+.job-info {
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f2f2f2; 
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.apply_form {
+    margin: 20px auto; 
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+.apply_form h2 {
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-size: 24px; 
+    color: #333; 
+    font-weight: bold;
+}
+  
+.apply_form input[type="text"],
+.apply_form input[type="email"],
+.apply_form input[type="file"],
+.apply_form select {
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    box-sizing: border-box; 
+}
+  
+.apply_form input[type="text"]:focus,
+.apply_form input[type="email"]:focus,
+.apply_form input[type="file"]:focus,
+.apply_form select:focus {
+    border-color: #007bff; 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+  
+button.apply_button {
+    width: 100%; 
+    padding: 12px;
+    margin-top: 10px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+  
+button.apply_button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .jobs-list-container {
+        flex-direction: column;
+    }
+    .job-scroll-list {
+        width: 100%;
+    }
+    .job_output {
+        width: 100%;
+    }
+
+}
